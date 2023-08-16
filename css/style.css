@@ -635,7 +635,7 @@ body {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    padding: 2rem 0 4rem 0; }
+    padding: 2rem 0 9rem 0; }
   .footer__form input {
     display: inline-block;
     font-size: 1.2vw;
@@ -937,7 +937,7 @@ body {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      padding: 2rem 0 4rem 0; }
+      padding: 2rem 0 9rem 0; }
     .footer__logo p {
       color: #FFF;
       line-height: 150%; }
