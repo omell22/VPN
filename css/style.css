@@ -300,6 +300,51 @@ body {
   max-height: 400px;
   margin-top: 18px; }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  z-index: 100; }
+  .cookie-banner__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.cookie-banner p {
+  margin: 0;
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
+.cookie-banner button {
+  background-color: #004996;
+  color: white;
+  border: none;
+  padding: 1.125rem 2.25rem;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 1.2rem 0;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .cookie-banner button:hover {
+    background: #004980;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+
 .prices__subtitle {
   max-width: 600px;
   margin: 0 auto;
@@ -397,7 +442,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 2rem 0 4rem 0; }
+    padding: 2rem 0 9rem 0; }
   .footer__logo p {
     color: #FFF;
     line-height: 150%; }
