@@ -52,16 +52,20 @@ function scrollToPoint(event) {
 
 
 
-
-
-
-
-
-
-
-
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBanner = document.getElementById("cookieBanner");
+  const acceptButton = document.getElementById("acceptButton");
+  const footer = document.querySelector('.footer__wrapper');
   
+  const isCookiesAccepted = localStorage.getItem("cookiesAccepted");
 
+  if (!isCookiesAccepted) {
+    cookieBanner.style.display = "flex";
+  }
 
+  acceptButton.addEventListener("click", function () {
+    footer.style.padding = "2rem 0 4rem 0";
+    cookieBanner.style.display = "none";
+    localStorage.setItem("cookiesAccepted", "true");
+  });
+});
