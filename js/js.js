@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cookieBanner = document.getElementById("cookieBanner");
   const acceptButton = document.getElementById("acceptButton");
   const footer = document.querySelector('.footer__wrapper');
-  
+  const closeButton = document.getElementById("closeButton");
   const isCookiesAccepted = localStorage.getItem("cookiesAccepted");
 
   if (!isCookiesAccepted) {
@@ -68,4 +68,22 @@ document.addEventListener("DOMContentLoaded", function () {
     cookieBanner.style.display = "none";
     localStorage.setItem("cookiesAccepted", "true");
   });
+
+  closeButton.addEventListener("click", function () {
+    cookieBanner.style.display = "none";
+    footer.style.padding = "2rem 0 4rem 0";
+  });
+
 });
+
+
+
+
+
+
+
+
+
+  
+
+
