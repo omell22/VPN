@@ -300,6 +300,14 @@ body {
   max-height: 400px;
   margin-top: 18px; }
 
+.cookie-banner p {
+  margin: 0;
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; }
+
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -318,32 +326,29 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-
-.cookie-banner p {
-  margin: 0;
-  display: block;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; }
-
-.cookie-banner button {
-  background-color: #004996;
-  color: white;
-  border: none;
-  padding: 1.125rem 2.25rem;
-  font-size: 18px;
-  cursor: pointer;
-  margin: 1.2rem 0;
-  border-radius: 50px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  .cookie-banner button:hover {
-    background: #004980;
+  .cookie-banner__accept-button {
+    background-color: #004996;
+    color: white;
+    border: none;
+    padding: 1.125rem 2.25rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 1.2rem 0;
+    border-radius: 50px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
+    .cookie-banner__accept-button:hover {
+      background: #004980;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+  .cookie-banner__close-button {
+    margin-left: 27px;
+    background: none;
+    border: none;
+    font-size: 2.8rem;
+    cursor: pointer; }
 
 .prices__subtitle {
   max-width: 600px;
@@ -635,7 +640,7 @@ body {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    padding: 2rem 0 9rem 0; }
+    padding: 2rem 0 8rem 0; }
   .footer__form input {
     display: inline-block;
     font-size: 1.2vw;
@@ -844,6 +849,15 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  .cookie-banner__accept-button {
+    font-size: 1rem;
+    padding: 10px; }
+  .cookie-banner__close-button {
+    margin-left: 16px;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer; }
   .questions__spoiler {
     padding: 30px; }
   .spoiler__title {
