@@ -109,10 +109,12 @@ body {
    top: 0;
    background: #fff;
    height: 118px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
+   
+   &__container{
+      display: flex;
+      align-items: center;   
+      justify-content: space-between;
+   }
    &__burger {
       display: none;
    }
@@ -124,10 +126,11 @@ body {
       transition: 0.5s;
 
       &:hover {
-         background: #0044;
-         padding: 10px;
-         border-radius: 10px;
+         & a{
+         color: #003980;
          transition: 0.5s;
+         }
+        
       }
 
       &:nth-last-child(1) {
@@ -160,6 +163,22 @@ body {
       background: #003980;
    }
 }
+.button2 {
+   font-weight: 600;
+   padding: rem(18px) rem(36px);
+   border: 1px solid #004996;
+   border-radius: 50px;
+   color: #000;
+   transition: 0.5s;
+   white-space: nowrap;
+
+   &:hover {
+      transition: 0.5s;
+      padding: rem(18px) rem(36px);
+      background: #003980;
+      color: #fff;
+   }
+}
 
 .main-page {
    display: flex;
@@ -187,11 +206,7 @@ body {
 
    }
 
-   &__button2 {
-      border: 1px solid #004996;
-      background: none;
-      color: #000;
-   }
+  
 
 }
 
@@ -587,7 +602,7 @@ body {
       border-radius: 50%;
       margin-right: 10px;
 
-      &:nth-last-child {
+      &_last{
          margin-right: 0;
       }
    }
@@ -615,9 +630,7 @@ body {
       top: 0;
       background: #fff;
       height: 118px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      
 
       &__menu li {
          font-weight: 500;
@@ -873,19 +886,23 @@ body {
 
    .container {
       overflow: hidden;
+      margin: 0 auto;
    }
 
    .header {
-      position: sticky;
+      position: fixed;
       width: 100%;
       top: 0;
       background: #fff;
       height: 100px;
-      justify-content: space-between;
-
+      
+      &__logo{
+         //flex: 1 1 auto;
+      }
       &__burger {
          display: block;
-         position: sticky;
+         position: relative;
+         right: 0;
          width: 30px;
          height: 20px;
          z-index: 3;
@@ -963,7 +980,7 @@ body {
       flex-direction: column;
       gap: 20px;
       text-align: center;
-
+      margin-top: 100px;
       &__image {
          order: 1;
          margin: 0 auto;
@@ -979,6 +996,16 @@ body {
 
       &__buttons {
          justify-content: center;
+
+      }
+      &__button2{
+         padding: 5px 10px;
+         display: flex;
+         align-items: center;
+         font-size: 4.2vw;
+      }
+      &__button1{
+         margin-right: 2vw;
       }
    }
 
@@ -1165,7 +1192,10 @@ body {
          color: #FFF;
          line-height: 150%;
       }
-
+      &__links{
+         display: block;
+         text-align: center;
+      }
       &__form {
          text-align: center;
       }
