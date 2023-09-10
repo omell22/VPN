@@ -4,21 +4,29 @@
   margin: 0;
   border: 0; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-:focus, :active {
+:focus,
+:active {
   outline: none; }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none; }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block; }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-style: 100%;
@@ -28,7 +36,9 @@ html, body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit; }
 
 input::-ms-clear {
@@ -42,7 +52,8 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none; }
 
 a:hover {
@@ -54,7 +65,12 @@ ul li {
 img {
   vertical-align: top; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-style: inherit;
   font-weight: inherit; }
 
@@ -72,10 +88,11 @@ body {
   z-index: 100;
   top: 0;
   background: #fff;
-  height: 118px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  height: 118px; }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .header__burger {
     display: none; }
   .header__menu li {
@@ -83,10 +100,8 @@ body {
     display: inline-block;
     margin-right: 32px;
     transition: 0.5s; }
-    .header__menu li:hover {
-      background: #0044;
-      padding: 10px;
-      border-radius: 10px;
+    .header__menu li:hover a {
+      color: #003980;
       transition: 0.5s; }
     .header__menu li:nth-last-child(1) {
       margin-right: 0; }
@@ -106,6 +121,20 @@ body {
     padding: 1.125rem 2.25rem;
     background: #003980; }
 
+.button2 {
+  font-weight: 600;
+  padding: 1.125rem 2.25rem;
+  border: 1px solid #004996;
+  border-radius: 50px;
+  color: #000;
+  transition: 0.5s;
+  white-space: nowrap; }
+  .button2:hover {
+    transition: 0.5s;
+    padding: 1.125rem 2.25rem;
+    background: #003980;
+    color: #fff; }
+
 .main-page {
   display: flex;
   align-items: center;
@@ -122,10 +151,6 @@ body {
     display: flex; }
   .main-page__button1 {
     margin-right: 3%; }
-  .main-page__button2 {
-    border: 1px solid #004996;
-    background: none;
-    color: #000; }
 
 .title {
   font-size: 40px;
@@ -400,7 +425,7 @@ body {
   transition: 0.5s;
   border-radius: 50%;
   margin-right: 10px; }
-  .links__img:nth-last-child {
+  .links__img_last {
     margin-right: 0; }
 
 @media (max-width: 1300px) {
@@ -413,10 +438,7 @@ body {
     position: sticky;
     top: 0;
     background: #fff;
-    height: 118px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    height: 118px; }
     .header__menu li {
       font-weight: 500;
       display: inline-block;
@@ -549,17 +571,18 @@ body {
     font-size: 4.2vw;
     padding: 0.9375rem; }
   .container {
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 auto; }
   .header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     background: #fff;
-    height: 100px;
-    justify-content: space-between; }
+    height: 100px; }
     .header__burger {
       display: block;
-      position: sticky;
+      position: relative;
+      right: 0;
       width: 30px;
       height: 20px;
       z-index: 3; }
@@ -609,7 +632,8 @@ body {
   .main-page {
     flex-direction: column;
     gap: 20px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 100px; }
     .main-page__image {
       order: 1;
       margin: 0 auto; }
@@ -619,6 +643,13 @@ body {
       order: 2; }
     .main-page__buttons {
       justify-content: center; }
+    .main-page__button2 {
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      font-size: 4.2vw; }
+    .main-page__button1 {
+      margin-right: 2vw; }
   .about__content {
     display: flex;
     flex-direction: column;
@@ -740,6 +771,9 @@ body {
     .footer__logo p {
       color: #FFF;
       line-height: 150%; }
+    .footer__links {
+      display: block;
+      text-align: center; }
     .footer__form {
       text-align: center; }
     .footer__form input {
