@@ -13,13 +13,22 @@ function showSpoiler(event) {
   spoilerTitle.classList.toggle('active');
 }
 
+const body = document.querySelector('body');
 const menu = document.querySelector('.header__menu')
 const burger = document.querySelector('.header__burger');
 burger.addEventListener('click', showBurger);
-const body = document.querySelector('body');
-function showBurger(event){
-  burger.classList.toggle('active');
-  menu.classList.toggle('active');
+
+body.addEventListener('click', closeBurger);
+function showBurger(event) {
+   event.stopPropagation();
+   burger.classList.toggle('active');
+   menu.classList.toggle('active');
+}
+function closeBurger(event) {
+   if (burger.classList.contains('active')) {
+       burger.classList.remove('active');
+       menu.classList.remove('active');
+   }
 }
 
 
@@ -28,7 +37,7 @@ const technologies = document.getElementById('technologies');
 const about = document.getElementById('about');
 const prices = document.getElementById('prices');
 const header = document.querySelector('.header');
-const headerHeight = 0; 
+const headerHeight = header.offsetHeight; 
 
 contacts.addEventListener('click', scrollToPoint);
 technologies.addEventListener('click', scrollToPoint);
