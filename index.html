@@ -1,171 +1,211 @@
 <!DOCTYPE html>
-<html lang ="ua">
-	<head>
-		<meta charset="UTF-8">
-		<meta http equiv="Content type" content="text/html;charset= UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-		
-		<title>VPN-Провайдер</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="container">
-				<div class="cookie-banner" id="cookieBanner">
-					<div class="container">
-						<div class="cookie-banner__wrapper">
-							<p>Цей сайт використовує файли cookies для роботи і покращення сервісу. Дізнайтесь більше в <a href="">Політика конфіденційності</a></p>
-						   <button id="acceptButton" class="cookie-banner__accept-button" >Прийняти</button>
-						   <button id="closeButton" class='cookie-banner__close-button' >&times;</button>
-						</div>
-					</div>
-				</div>
-				<header class="header">
-					<div class="header__logo"><a href=""><img src="img/Logo.png" alt=""></a>
-					</div>
-					<div class="header__burger">
-						<span></span>
-					</div>
-					<div class="header__menu">
-						<ul class="menu__list">
-							<li id ='about' data-target="about" class="menu__item"><a href="" class="menu__link">Про компанію</a></li>
-							<li id ='technologies' data-target="technologies" class="menu__item"><a href="" class="menu__link">Технології</a></li>
-							<li id ='prices' data-target="prices" class="menu__item"><a href="" class="menu__link">Тарифні плани</a></li>
-							<li id ='contacts' data-target="contacts" class="menu__item"><a href="" class="menu__link">Контакти</a></li>
-						</ul>
-					</div>
-					
-					<div class="header__button">
-						<a href="" class="button">Приєднатися</a>
-					</div>
-				</header>
-				<div class="main-page indent">
-					<div class="main-page__content">
-						<div class="main-page__title">Український VPN-сервіс стане гарантованим помічником</div>
-						<div class="main-page__subtitle">Більше можливостей з визнаним лідером серед VPN</div>
-						<div class="main-page__buttons">
-							<a href="" class="main-page__button1 button">Купити VPN</a>
-							<a href="" class="main-page__button2 button">Дізнатися пропозиції</a>
-						</div>
-					</div>
-					<div class="main-page__image"><img src="img/Ellipse 142.jpg" alt=""></div>
-				</div>
-				<div class="about indent">
-					<div class="about__title title">Про компанию</div>
-					<div class="about__content">
-						<div class="about__text">Наша компанія - це передовий провайдер VPN послуг, який зосереджується на наданні надійного і безпечного інтернет-з'єднання для наших клієнтів. Завдяки використанню передових технологій шифрування та високошвидкісних серверів у різних країнах, ми допомагаємо нашим користувачам забезпечити приватність та анонімність під час перегляду веб-сайтів, користування публічними Wi-Fi мережами та обходу географічних обмежень.</div>
-						<div class="about__image"><img src="img/Container.jpg" alt=""></div>
-					</div>
-					<a href="" class="about__button button">Дізнатися пропозиції</a>
-				</div>
-				<div class="technologies indent">
-					<div class="technologies__title title">Технології</div>
-					<div class="technologies__content">
-						<div class="technologies__item">
-							<div class="technologies__subtitle">Захищені</div>
-							<div class="technologies__text">Найпоширеніший варіант віртуальних приватних мереж. З його допомогою можливо створити надійну і захищену підмережу на основі ненадійної мережі, зазвичай, Інтернету. Прикладом захищених протоколів VPN є: Ipsec, SSL та PPTP. Прикладом використання протоколу SSL є програмне забезпечення OpenVPN.</div>
-						</div>
-						<div class="technologies__item">
-							<div class="technologies__subtitle">Довірчі</div>
-							<div class="technologies__text">Використовують у випадках, коли середовище, яким передають дані, можна вважати надійним і потрібно розв'язати лише завдання створення віртуальної підмережі в рамках більшої мережі. Питання забезпечення безпеки стають неактуальними. Прикладами подібних VPN рішень є: Multi-protocol label switching (MPLS) і L2tp (Layer 2 Tunnelling Protocol). (Коректніше сказати, що ці протоколи перекладають завдання забезпечення безпеки на інших, наприклад L2tp, як правило, використовують разом з Ipsec).</div>
-						</div>
-					</div>
-				</div>
-				<div class="questions indent">
-					<div class="questions__title title">Поширені запитання</div>
-					<div class="questions__subtitle">Питання які можуть ваз зацікавити та допомогти </div>
-					<div class="questions__spoilers">
-						<div class="questions__spoiler">
-							<div class="spoiler__title">Чи безпечно користуватися VPN?</div>
-							<p class="spoiler__paragraph">Так, з нашим VPN ваша безпека у Інтернеті підвищується. Ми застосовуємо сильне шифрування для захисту ваших даних та надаємо конфіденційність під час перегляду веб-сайтів та використання публічних Wi-Fi мереж.</p>
-						</div>
-						<div class="questions__spoiler">
-							<div class="spoiler__title">Як обрати VPN?</div>
-							<p class="spoiler__paragraph">Обирайте наш VPN для надійного та безпечного інтернет-перегляду. Ми пропонуємо сильне шифрування, високу швидкість і добре вибудовані сервери для різних потреб.</p>
-						</div>
-						<div class="questions__spoiler">
-							<div class="spoiler__title">Чи варто платити за конфіденційність в Інтернеті?</div>
-							<p class="spoiler__paragraph">Звісно! Ваши дані є важливими, тому вартість захисту їх в Інтернеті варта плати. Наш VPN допомагає зберегти ваші особисті дані від зловмисників та підлогодження.</p>
-						</div>
-						<div class="questions__spoiler">
-							<div class="spoiler__title">Чи повинна моя VPN бути включена постійно?</div>
-							<p class="spoiler__paragraph">Включайте наш VPN, коли це потрібно. Ви можете легко активувати його на відкритих Wi-Fi мережах або під час роботи з конфіденційними даними. Наша послуга забезпечує безпечний і зручний доступ до Інтернету.</p>
-						</div>
-					</div>
-					<a href="" class="questions__button button">Дізнатися пропозиції</a>
-				</div>
-				<div class="prices indent">
-					<div class="prices__title title">Тарифні плани</div>
-					<div class="prices__subtitle">
-					Наші тарифні плани розроблені, щоб задовольнити різноманітні потреби наших клієнтів. Незалежно від того, чи ви шукаєте базовий рівень захисту або вищий рівень конфіденційності та функціональності, ми маємо відповідний пакет для вас.
-					</div>
-					<div class="prices__items">
+<html lang="ua">
 
-						<div class="prices__item">
-							<div class="prices__img"><img src="img/Logo.png" alt=""></div>
-							<div class="prices__price">₴99/на місяць</div>
-							<div class="prices__plan">basic plan</div>
-							<div class="prices__text">Сильне шифрування, без обмежень швидкості, сервери у різних країнах, круглодобова підтримка..</div>
-							<a href="" class="prices__button button">Купити</a>
-						</div>
-						<div class="prices__item">
-							<div class="prices__img"><img src="img/Logo.png" alt=""></div>
-							<div class="prices__price">₴199/на місяць</div>
-							<div class="prices__plan">Growth plan</div>
-							<div class="prices__text">Подвійне шифрування, блокування реклами та відстеження, всі функції попереднього пакету.</div>
-							<a href="" class="prices__button button">Купити</a>
-						</div>
-						<div class="prices__item">
-							<div class="prices__img"><img src="img/Logo.png" alt=""></div>
-							<div class="prices__price">₴399/на місяць</div>
-							<div class="prices__plan">enterprise plan</div>
-							<div class="prices__text">Особливий віджет для анонімності, додаткові сервери з високою швидкістю, всі функції попередніх пакетів.</div>
-							<a href="" class="prices__button button">Купити</a>
-						</div>
-					</div>
-					<a href="" class="prices__last-button button">Дізнатися пропозиції</a>
-				</div>
-				<div class="contacts indent">
-					<div class="contacts__title title">Контакти</div>
-					<div class="contacts__info">
-						<div class="contacts__img">
-							<img src="img/Google-Контакты.webp" alt="">
-						</div>
-						<div class="contacts__text">
-							<div class="contacts__subtitle">Feature one</div>
-							<div class="contacts__paragraph">Web design partially overlaps web engineering in the broader scope of web development</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer__wrapper">
-						<div class="footer__logo">
-							<img src="img/Logo (1).png" alt="">
-							<p>Copyright © 2023 BRIX <br>Templates | All Rights Reserved </p>
-						</div>
-						<div class="footer__form">
-							<div class="form__title">Підпишіться на нашу розсилку</div>
-							<input type="text" name="username" placeholder="Введіть адресу електронної пошти">
-							<a href="" class="footer__button button">Підписатися</a>
-						</div>
-						<div class="footer__links">
-							<div class="links__title">Слідкуй за нами</div>
-							<a href=""><img class ='links__img' src="img/f.jpg" alt=""></a>
-							<a href=""><img class ='links__img' src="img/t.jpg" alt=""></a>
-							<a href=""><img class ='links__img' src="img/i.jpg" alt=""></a>
-							<a href=""><img class ='links__img' src="img/l.jpg" alt=""></a>
-							<a href=""><img class ='links__img' src="img/y.jpg" alt=""></a>	
-						</div>
-					</div>
-				</div>
-			</footer>		
-		</div>	
-		<script src="js/js.js"></script>
-	</body>  
+<head>
+   <meta charset="UTF-8">
+   <meta http equiv="Content type" content="text/html;charset= UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet">
+
+   <title>VPN-Провайдер</title>
+</head>
+
+<body>
+   <div class="wrapper">
+       <header class="header">
+            <div class="header__container container">
+              <div class="header__logo"><a href=""><img src="img/Logo.png" alt=""></a>
+               </div>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <div class="header__menu">
+                  <ul class="menu__list">
+                     <li id='about' data-target="about" class="menu__item"><a href="" class="menu__link">Про компанію</a>
+                     </li>
+                     <li id='technologies' data-target="technologies" class="menu__item"><a href=""
+                           class="menu__link">Технології</a></li>
+                     <li id='prices' data-target="prices" class="menu__item"><a href="" class="menu__link">Тарифні
+                           плани</a></li>
+                     <li id='contacts' data-target="contacts" class="menu__item"><a href="" class="menu__link">Контакти</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="header__button">
+                  <a href="" class="button">Приєднатися</a>
+               </div> 
+            </div>
+            
+         </header>
+      <div class="container">
+         <div class="cookie-banner" id="cookieBanner">
+            <div class="container">
+               <div class="cookie-banner__wrapper">
+                  <p>Цей сайт використовує файли cookies для роботи і покращення сервісу. Дізнайтесь більше в <a
+                        href="">Політика конфіденційності</a></p>
+                  <button id="acceptButton" class="cookie-banner__accept-button">Прийняти</button>
+                  <button id="closeButton" class='cookie-banner__close-button'>&times;</button>
+               </div>
+            </div>
+         </div>
+         <main class="main">
+            <section class="main-page indent">
+            <div class="main-page__content">
+               <div class="main-page__title">Український VPN-сервіс стане гарантованим помічником</div>
+               <div class="main-page__subtitle">Більше можливостей з визнаним лідером серед VPN</div>
+               <div class="main-page__buttons">
+                  <a href="" class="main-page__button1 button">Купити VPN</a>
+                  <a href="" class="main-page__button2 button2">Дізнатися пропозиції</a>
+               </div>
+            </div>
+            <div class="main-page__image"><img src="img/Ellipse 142.jpg" alt=""></div>
+         </section>
+         <section class="about indent">
+            <div class="about__title title">Про компанию</div>
+            <div class="about__content">
+               <div class="about__text">Наша компанія - це передовий провайдер VPN послуг, який зосереджується на
+                  наданні надійного і безпечного інтернет-з'єднання для наших клієнтів. Завдяки використанню передових
+                  технологій шифрування та високошвидкісних серверів у різних країнах, ми допомагаємо нашим користувачам
+                  забезпечити приватність та анонімність під час перегляду веб-сайтів, користування публічними Wi-Fi
+                  мережами та обходу географічних обмежень.</div>
+               <div class="about__image"><img src="img/Container.jpg" alt=""></div>
+            </div>
+            <a href="" class="about__button button2">Дізнатися пропозиції</a>
+         </section>
+         <section class="technologies indent">
+            <div class="technologies__title title">Технології</div>
+            <div class="technologies__content">
+               <div class="technologies__item">
+                  <div class="technologies__subtitle">Захищені</div>
+                  <div class="technologies__text">Найпоширеніший варіант віртуальних приватних мереж. З його допомогою
+                     можливо створити надійну і захищену підмережу на основі ненадійної мережі, зазвичай, Інтернету.
+                     Прикладом захищених протоколів VPN є: Ipsec, SSL та PPTP. Прикладом використання протоколу SSL є
+                     програмне забезпечення OpenVPN.</div>
+               </div>
+               <div class="technologies__item">
+                  <div class="technologies__subtitle">Довірчі</div>
+                  <div class="technologies__text">Використовують у випадках, коли середовище, яким передають дані, можна
+                     вважати надійним і потрібно розв'язати лише завдання створення віртуальної підмережі в рамках
+                     більшої мережі. Питання забезпечення безпеки стають неактуальними. Прикладами подібних VPN рішень
+                     є: Multi-protocol label switching (MPLS) і L2tp (Layer 2 Tunnelling Protocol). (Коректніше сказати,
+                     що ці протоколи перекладають завдання забезпечення безпеки на інших, наприклад L2tp, як правило,
+                     використовують разом з Ipsec).</div>
+               </div>
+            </div>
+         </section>
+         <section class="questions indent">
+            <div class="questions__title title">Поширені запитання</div>
+            <div class="questions__subtitle">Питання які можуть ваз зацікавити та допомогти </div>
+            <div class="questions__spoilers">
+               <div class="questions__spoiler">
+                  <div class="spoiler__title">Чи безпечно користуватися VPN?</div>
+                  <p class="spoiler__paragraph">Так, з нашим VPN ваша безпека у Інтернеті підвищується. Ми застосовуємо
+                     сильне шифрування для захисту ваших даних та надаємо конфіденційність під час перегляду веб-сайтів
+                     та використання публічних Wi-Fi мереж.</p>
+               </div>
+               <div class="questions__spoiler">
+                  <div class="spoiler__title">Як обрати VPN?</div>
+                  <p class="spoiler__paragraph">Обирайте наш VPN для надійного та безпечного інтернет-перегляду. Ми
+                     пропонуємо сильне шифрування, високу швидкість і добре вибудовані сервери для різних потреб.</p>
+               </div>
+               <div class="questions__spoiler">
+                  <div class="spoiler__title">Чи варто платити за конфіденційність в Інтернеті?</div>
+                  <p class="spoiler__paragraph">Звісно! Ваши дані є важливими, тому вартість захисту їх в Інтернеті
+                     варта плати. Наш VPN допомагає зберегти ваші особисті дані від зловмисників та підлогодження.</p>
+               </div>
+               <div class="questions__spoiler">
+                  <div class="spoiler__title">Чи повинна моя VPN бути включена постійно?</div>
+                  <p class="spoiler__paragraph">Включайте наш VPN, коли це потрібно. Ви можете легко активувати його на
+                     відкритих Wi-Fi мережах або під час роботи з конфіденційними даними. Наша послуга забезпечує
+                     безпечний і зручний доступ до Інтернету.</p>
+               </div>
+            </div>
+            <a href="" class="questions__button button">Дізнатися пропозиції</a>
+         </section>
+         <section class="prices indent">
+            <div class="prices__title title">Тарифні плани</div>
+            <div class="prices__subtitle">
+               Наші тарифні плани розроблені, щоб задовольнити різноманітні потреби наших клієнтів. Незалежно від того,
+               чи ви шукаєте базовий рівень захисту або вищий рівень конфіденційності та функціональності, ми маємо
+               відповідний пакет для вас.
+            </div>
+            <div class="prices__items">
+
+               <div class="prices__item">
+                  <div class="prices__img"><img src="img/Logo.png" alt=""></div>
+                  <div class="prices__price">₴99/на місяць</div>
+                  <div class="prices__plan">basic plan</div>
+                  <div class="prices__text">Сильне шифрування, без обмежень швидкості, сервери у різних країнах,
+                     круглодобова підтримка..</div>
+                  <a href="" class="prices__button button">Купити</a>
+               </div>
+               <div class="prices__item">
+                  <div class="prices__img"><img src="img/Logo.png" alt=""></div>
+                  <div class="prices__price">₴199/на місяць</div>
+                  <div class="prices__plan">Growth plan</div>
+                  <div class="prices__text">Подвійне шифрування, блокування реклами та відстеження, всі функції
+                     попереднього пакету.</div>
+                  <a href="" class="prices__button button">Купити</a>
+               </div>
+               <div class="prices__item">
+                  <div class="prices__img"><img src="img/Logo.png" alt=""></div>
+                  <div class="prices__price">₴399/на місяць</div>
+                  <div class="prices__plan">enterprise plan</div>
+                  <div class="prices__text">Особливий віджет для анонімності, додаткові сервери з високою швидкістю, всі
+                     функції попередніх пакетів.</div>
+                  <a href="" class="prices__button button">Купити</a>
+               </div>
+            </div>
+            <a href="" class="prices__last-button button2">Дізнатися пропозиції</a>
+         </section>
+         <section class="contacts indent">
+            <div class="contacts__title title">Контакти</div>
+            <div class="contacts__info">
+               <div class="contacts__img">
+                  <img src="img/Google-Контакты.webp" alt="">
+               </div>
+               <div class="contacts__text">
+                  <div class="contacts__subtitle">Feature one</div>
+                  <div class="contacts__paragraph">Web design partially overlaps web engineering in the broader scope of
+                     web development</div>
+               </div>
+            </div>
+         </section>
+         </main>
+         
+      </div>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__wrapper">
+               <div class="footer__logo">
+                  <img src="img/Logo (1).png" alt="">
+                  <p>Copyright © 2023 BRIX <br>Templates | All Rights Reserved </p>
+               </div>
+               <div class="footer__form">
+                  <div class="form__title">Підпишіться на нашу розсилку</div>
+                  <input type="text" name="username" placeholder="Введіть адресу електронної пошти">
+                  <a href="" class="footer__button button">Підписатися</a>
+               </div>
+               <div class="footer__links">
+                  <div class="links__title">Слідкуй за нами</div>
+                  <a href=""><img class='links__img' src="img/f.jpg" alt=""></a>
+                  <a href=""><img class='links__img' src="img/t.jpg" alt=""></a>
+                  <a href=""><img class='links__img' src="img/i.jpg" alt=""></a>
+                  <a href=""><img class='links__img' src="img/l.jpg" alt=""></a>
+                  <a href=""><img class='links__img links__img_last' src="img/y.jpg" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="js/js.js"></script>
+</body>
+
 </html>
